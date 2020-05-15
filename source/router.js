@@ -1,4 +1,9 @@
-const page404 = () => document.getElementById("/404");
+window.pages = {};
+window.pages._404 = () => document.getElementById("/404");
+
+// Pages
+window.pages.home = () => import("./pages/home");
+window.pages.about = () => import("./pages/about");
 
 const changePageTitle = (element) => {
   const requestedTitle = element.content.querySelector("title");
@@ -14,7 +19,7 @@ const mountPage = (page) => {
 const initializeRouter = () => {
   const path = window.location.pathname;
   const requestedTemplate = document.getElementById(path);
-  if (requestedTemplate === null) mountPage(page404());
+  if (requestedTemplate === null) mountPage(window.pages._404());
   else mountPage(requestedTemplate);
 };
 

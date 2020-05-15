@@ -2249,7 +2249,7 @@ packages:
   /browserslist/4.12.0:
     dependencies:
       caniuse-lite: 1.0.30001059
-      electron-to-chromium: 1.3.437
+      electron-to-chromium: 1.3.438
       node-releases: 1.1.55
       pkg-up: 2.0.0
     dev: true
@@ -3020,10 +3020,10 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-7vmuyh5+kuUyJKePhQfRQBhXV5Ce+RnaeeQArKu1EAMpL3WbgMt5WG6uQZpEVvYSSsxMXRKOewtDk9RaTKXRlA==
-  /electron-to-chromium/1.3.437:
+  /electron-to-chromium/1.3.438:
     dev: true
     resolution:
-      integrity: sha512-PBQn2q68ErqMyBUABh9Gh8R6DunGky8aB5y3N5lPM7OVpldwyUbAK5AX9WcwE/5F6ceqvQ+iQLYkJYRysAs6Bg==
+      integrity: sha512-QKMcpfA/fCOnqFHsZvKr2haQQb3eXkDI17zT+4hHxJJThyN5nShcG6q1VR8vRiE/2GCJM+0p3PzinYknkdsBYg==
   /elliptic/6.5.2:
     dependencies:
       bn.js: 4.11.8
