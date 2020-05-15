@@ -17,3 +17,7 @@ import "./components/counter";
 
 // Partials
 import "./partials/navigation";
+
+// Pages
+import "./pages/home";
+import "./pages/about";
