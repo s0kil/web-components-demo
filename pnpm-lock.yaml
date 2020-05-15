@@ -3,6 +3,7 @@ devDependencies:
   '@babel/preset-env': 7.9.6_@babel+core@7.9.6
   '@webcomponents/webcomponentsjs': 2.4.3
   hybrids: 4.1.9
+  instant.page: 3.0.0
   parcel: 2.0.0-nightly.270
 lockfileVersion: 5.1
 packages:
@@ -3719,6 +3720,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
+  /instant.page/3.0.0:
+    dev: true
+    resolution:
+      integrity: sha512-cWTCMZlMZ/CKtY7+Rf3ZgeNtNPP9Yv/glRyriOMym98OhF484N5dRES9qv8q2MgMPmNwUb6T9mEHMdffICbnzw==
   /invariant/2.2.4:
     dependencies:
       loose-envify: 1.4.0
@@ -6498,4 +6503,5 @@ specifiers:
   '@babel/preset-env': ^7.9.6
   '@webcomponents/webcomponentsjs': ^2.4.3
   hybrids: ^4.1.9
+  instant.page: ^3.0.0
   parcel: ^2.0.0-nightly.270
