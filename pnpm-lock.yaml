@@ -5,6 +5,7 @@ devDependencies:
   hybrids: 4.1.9
   instant.page: 3.0.0
   parcel: 2.0.0-nightly.270
+  sirv-cli: 0.4.5
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.8.3:
@@ -1870,6 +1871,10 @@ packages:
       '@parcel/core': ^2.0.0-alpha.3.1
     resolution:
       integrity: sha512-OOvrj6nEJ/mAhLg+7KeD4jg9+j7SKks+vy0IdJ0sVszDv+or47Fma7J0LQ8fcQdig0QH9tevG06gdVwSZIpu1A==
+  /@polka/url/0.5.0:
+    dev: true
+    resolution:
+      integrity: sha512-oZLYFEAzUKyi3SKnXvj32ZCEGH6RDnao7COuCVhDydMS9NrCSVXhM79VaKyP5+Zc33m0QXEd2DN3UkU7OsHcfw==
   /@types/color-name/1.1.1:
     dev: true
     resolution:
@@ -2538,6 +2543,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-ZMkYO/LkF17QvCPqM0gxw8yUzigAOZOSWSHg91FH6orS7vcEj5dVZTidN2fQ14yBSdg97RqhSNwLUXInd52OTA==
+  /console-clear/1.1.1:
+    dev: true
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-pMD+MVR538ipqkG5JXeOEbKWS5um1H4LUUccUQG68qpeqBYbzYy79Gh55jkd2TtPdRfUaLWdv6LPP//5Zt0aPQ==
   /console-control-strings/1.1.0:
     dev: true
     resolution:
@@ -3414,6 +3425,12 @@ packages:
       node: 6.* || 8.* || >= 10.*
     resolution:
       integrity: sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
+  /get-port/3.2.0:
+    dev: true
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha1-3Xzn3hh8Bsi/NTeWrHHgmfCYDrw=
   /get-port/4.2.0:
     dev: true
     engines:
@@ -4186,6 +4203,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
+  /kleur/3.0.3:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
   /leven/3.1.0:
     dev: true
     engines:
@@ -4209,6 +4232,12 @@ packages:
       node: '>= 0.8.0'
     resolution:
       integrity: sha1-OwmSTt+fCDwEkP3UwLxEIeBHZO4=
+  /local-access/1.0.1:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-ykt2pgN0aqIy6KQC1CqdWTWkmUwNgaOS6dcpHVjyBJONA+Xi7AtSB1vuxC/U/0tjIP3wcRudwQk1YYzUvzk2bA==
   /locate-path/2.0.0:
     dependencies:
       p-locate: 2.0.0
@@ -4413,6 +4442,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
+  /mri/1.1.5:
+    dev: true
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-d2RKzMD4JNyHMbnbWnznPaa8vbdlq/4pNZ3IgdaGrVbBhebBsGUUE/6qorTMYNS6TwuH3ilfOlD2bf4Igh8CKg==
   /ms/2.0.0:
     dev: true
     resolution:
@@ -5617,6 +5652,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-DEqnSRTDw/Tc3FXf49zedI638Z9onwUotBMiUFKmrO2sdFKIbXamXGQ3Axd4qgphxKB4kw/qP1w5kTxnfU1B9Q==
+  /sade/1.7.3:
+    dependencies:
+      mri: 1.1.5
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-m4BctppMvJ60W1dXnHq7jMmFe3hPJZDAH85kQ3ACTo7XZNVUuTItCQ+2HfyaMeV5cKrbw7l4vD/6We3GBxvdJw==
   /safe-buffer/5.1.2:
     dev: true
     resolution:
@@ -5726,6 +5769,30 @@ packages:
     dev: true
     resolution:
       integrity: sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=
+  /sirv-cli/0.4.5:
+    dependencies:
+      console-clear: 1.1.1
+      get-port: 3.2.0
+      kleur: 3.0.3
+      local-access: 1.0.1
+      sade: 1.7.3
+      sirv: 0.4.2
+      tinydate: 1.2.0
+    dev: true
+    engines:
+      node: '>= 6'
+    hasBin: true
+    resolution:
+      integrity: sha512-Fl6icSm0EwPrXSGid2xphMp//WNTSX2yENRAGnJuuZNmdc8LvE/BtdZD3MPn28ifAfDqTMwbB3dpcZojAIOiBg==
+  /sirv/0.4.2:
+    dependencies:
+      '@polka/url': 0.5.0
+      mime: 2.4.5
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-dQbZnsMaIiTQPZmbGmktz+c74zt/hyrJEB4tdp2Jj0RNv9J6B/OWR5RyrZEvIn9fyh9Zlg2OlE2XzKz6wMKGAw==
   /slice-ansi/4.0.0:
     dependencies:
       ansi-styles: 4.2.1
@@ -6109,6 +6176,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
+  /tinydate/1.2.0:
+    dev: true
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-3GwPk8VhDFnUZ2TrgkhXJs6hcMAIIw4x/xkz+ayK6dGoQmp2nUwKzBXK0WnMsqkh6vfUhpqQicQF3rbshfyJkg==
   /to-fast-properties/2.0.0:
     dev: true
     engines:
@@ -6505,3 +6578,4 @@ specifiers:
   hybrids: ^4.1.9
   instant.page: ^3.0.0
   parcel: ^2.0.0-nightly.270
+  sirv-cli: ^0.4.5

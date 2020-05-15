@@ -7,7 +7,8 @@
     "prebuild": "npm run clean",
     "postbuild": "npm run generateNetlifyHeaders",
     "clean": "echo \"require('fs').rmdirSync('dist', { recursive: true })\" | node",
-    "generateNetlifyHeaders": "./utilities/generateServerPushHeaders.sh"
+    "generateNetlifyHeaders": "./utilities/generateServerPushHeaders.sh",
+    "serve": "sirv start dist/ --single --port 1234"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
@@ -15,6 +16,7 @@
     "@webcomponents/webcomponentsjs": "^2.4.3",
     "hybrids": "^4.1.9",
     "instant.page": "^3.0.0",
-    "parcel": "^2.0.0-nightly.270"
+    "parcel": "^2.0.0-nightly.270",
+    "sirv-cli": "^0.4.5"
   }
 }
